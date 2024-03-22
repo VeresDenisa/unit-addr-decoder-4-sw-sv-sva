@@ -23,9 +23,9 @@ interface output_interface(input bit clock);
     endclocking
 
     task send(output_item t);
-        @(driver);
         driver.rd_data_in <= t.rd_data_in;
         driver.ack_in     <= t.ack_in;
+        @(driver);
     endtask : send
 
     function automatic void receive(ref output_item t);

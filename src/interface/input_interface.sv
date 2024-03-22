@@ -16,7 +16,7 @@ interface input_interface(input bit clock);
 
     clocking driver@(posedge clock);
         output rst_n;
-        
+
         output enable_in;
         output wr_rd_op;
         output valid_in;
@@ -38,13 +38,13 @@ interface input_interface(input bit clock);
     endclocking
 
     task send(input_item t);
-        @(driver);
         driver.enable_in  <= t.enable_in;
         driver.wr_rd_op   <= t.wr_rd_op;
         driver.valid_in   <= t.valid_in;
         driver.addr_in    <= t.addr_in;
         driver.op_id_in   <= t.op_id_in;
         driver.wr_data_in <= t.wr_data_in;
+        @(driver);
     endtask : send
 
     function automatic void receive(ref input_item t);

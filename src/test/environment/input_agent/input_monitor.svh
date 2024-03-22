@@ -5,7 +5,7 @@ class input_monitor extends uvm_monitor;
     
     uvm_analysis_port #(input_item) an_port;
     
-    input_item item_previous, item_current;
+    input_item item;
     
     function new (string name = "input_monitor", uvm_component parent = null);
         super.new(name, parent);
@@ -21,8 +21,7 @@ function void input_monitor::build_phase (uvm_phase phase);
     super.build_phase(phase);  
     `uvm_info(get_name(), $sformatf("---> ENTER PHASE: --> BUILD <--"), UVM_DEBUG);
     
-    item_previous = new();
-    item_current = new();
+    item = new("input_item");
     an_port = new("mon_an_port", this);
     
     if(!uvm_config_db#(virtual input_interface)::get(this, "", "input_interface", input_i))
@@ -36,12 +35,9 @@ task input_monitor::run_phase(uvm_phase phase);
 
     forever begin : forever_monitor
         @(input_i.monitor);
-        input_i.receive(item_current);
-        //if(!item_current.compare(item_previous)) begin
-        `uvm_info(get_name(), $sformatf("Monitored configuration: %s", item_current.convert2string), UVM_MEDIUM);
-        //item_previous.copy(item_current);
-        an_port.write(item_current);
-        //end
+        input_i.receive(item);
+        `uvm_info(get_name(), $sformatf("Monitore: %s", item.convert2string), UVM_MEDIUM);
+        an_port.write(item);
     end : forever_monitor
     
     `uvm_info(get_name(), $sformatf("<--- EXIT PHASE: --> RUN <--"), UVM_DEBUG);
