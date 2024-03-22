@@ -1,0 +1,1443 @@
+COVERGROUP COVERAGE:
+-----------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal    Status               
+                                                                                              
+-----------------------------------------------------------------------------------------------
+ TYPE /environment_pack/input_covergroup               70.68%        100    Uncovered            
+    covered/total bins:                                    35        395                      
+    missing/total bins:                                   360        395                      
+    % Hit:                                              8.86%        100                      
+    type_option.weight=1
+    type_option.goal=100
+    type_option.comment=
+    type_option.strobe=0
+    type_option.merge_instances=auto(0)
+    Coverpoint input_covergroup::wr_rd_op_cvp         100.00%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                        100.00%        100                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Coverpoint input_covergroup::valid_in_cvp         100.00%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                        100.00%        100                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Coverpoint input_covergroup::enable_in_cvp        100.00%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                        100.00%        100                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Coverpoint input_covergroup::addr_in_7_5_cvp      100.00%        100    Covered              
+        covered/total bins:                                 6          6                      
+        missing/total bins:                                 0          6                      
+        % Hit:                                        100.00%        100                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Coverpoint input_covergroup::addr_in_4_0_cvp      100.00%        100    Covered              
+        covered/total bins:                                 5          5                      
+        missing/total bins:                                 0          5                      
+        % Hit:                                        100.00%        100                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Coverpoint input_covergroup::wr_data_in_cvp        50.00%        100    Uncovered            
+        covered/total bins:                                 2          4                      
+        missing/total bins:                                 2          4                      
+        % Hit:                                         50.00%        100                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Coverpoint input_covergroup::op_id_in_cvp          75.00%        100    Uncovered            
+        covered/total bins:                                 3          4                      
+        missing/total bins:                                 1          4                      
+        % Hit:                                         75.00%        100                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Coverpoint input_covergroup::ready_out_cvp         50.00%        100    Uncovered            
+        covered/total bins:                                 1          2                      
+        missing/total bins:                                 1          2                      
+        % Hit:                                         50.00%        100                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Cross input_covergroup::data_port_register_cross 
+                                                        1.66%        100    Uncovered            
+        covered/total bins:                                 2        120                      
+        missing/total bins:                               118        120                      
+        % Hit:                                          1.66%        100                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Cross input_covergroup::wr_rd_data_port_register_cross 
+                                                        0.83%        100    Uncovered            
+        covered/total bins:                                 2        240                      
+        missing/total bins:                               238        240                      
+        % Hit:                                          0.83%        100                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Cross input_covergroup::wr_rd_cases_cross         100.00%        100    Covered              
+        covered/total bins:                                 8          8                      
+        missing/total bins:                                 0          8                      
+        % Hit:                                        100.00%        100                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+ Covergroup instance \/environment_pack::coverage::input_cvg  
+                                                       70.68%        100    Uncovered            
+    covered/total bins:                                    35        395                      
+    missing/total bins:                                   360        395                      
+    % Hit:                                              8.86%        100                      
+    option.name=\/environment_pack::coverage::input_cvg 
+    option.weight=1
+    option.goal=100
+    option.comment=
+    option.at_least=1
+    option.auto_bin_max=64
+    option.cross_num_print_missing=0
+    option.detect_overlap=0
+    option.per_instance=0
+    option.get_inst_coverage=0
+    Coverpoint wr_rd_op_cvp                           100.00%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                        100.00%        100                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        bin value_binary[0]                                49          1    Covered              
+        bin value_binary[1]                                54          1    Covered              
+    Coverpoint valid_in_cvp                           100.00%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                        100.00%        100                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        bin value_binary[0]                                46          1    Covered              
+        bin value_binary[1]                                57          1    Covered              
+    Coverpoint enable_in_cvp                          100.00%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                        100.00%        100                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        bin value_binary[0]                                62          1    Covered              
+        bin value_binary[1]                                41          1    Covered              
+    Coverpoint addr_in_7_5_cvp                        100.00%        100    Covered              
+        covered/total bins:                                 6          6                      
+        missing/total bins:                                 0          6                      
+        % Hit:                                        100.00%        100                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        bin legal_values[0]                                14          1    Covered              
+        bin legal_values[1]                                 7          1    Covered              
+        bin legal_values[2]                                16          1    Covered              
+        bin legal_values[3]                                16          1    Covered              
+        bin legal_values[4]                                 7          1    Covered              
+        bin illegal_value                                  43          1    Covered              
+    Coverpoint addr_in_4_0_cvp                        100.00%        100    Covered              
+        covered/total bins:                                 5          5                      
+        missing/total bins:                                 0          5                      
+        % Hit:                                        100.00%        100                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        bin legal_values[0]                                 5          1    Covered              
+        bin legal_values[1]                                 3          1    Covered              
+        bin legal_values[2]                                 2          1    Covered              
+        bin legal_values[3]                                 3          1    Covered              
+        bin illegal_value                                  90          1    Covered              
+    Coverpoint wr_data_in_cvp                          50.00%        100    Uncovered            
+        covered/total bins:                                 2          4                      
+        missing/total bins:                                 2          4                      
+        % Hit:                                         50.00%        100                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        bin value_0_FF[0]                                   2          1    Covered              
+        bin value_0_FF[1]                                   0          1    ZERO                 
+        bin value_0_FF[2]                                   0          1    ZERO                 
+        bin value_0_FF[3]                                   1          1    Covered              
+    Coverpoint op_id_in_cvp                            75.00%        100    Uncovered            
+        covered/total bins:                                 3          4                      
+        missing/total bins:                                 1          4                      
+        % Hit:                                         75.00%        100                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        bin value_0_FF[0]                                   2          1    Covered              
+        bin value_0_FF[1]                                   3          1    Covered              
+        bin value_0_FF[2]                                   1          1    Covered              
+        bin value_0_FF[3]                                   0          1    ZERO                 
+    Coverpoint ready_out_cvp                           50.00%        100    Uncovered            
+        covered/total bins:                                 1          2                      
+        missing/total bins:                                 1          2                      
+        % Hit:                                         50.00%        100                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        bin value_binary[0]                               103          1    Covered              
+        bin value_binary[1]                                 0          1    ZERO                 
+    Cross data_port_register_cross                      1.66%        100    Uncovered            
+        covered/total bins:                                 2        120                      
+        missing/total bins:                               118        120                      
+        % Hit:                                          1.66%        100                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.cross_num_print_missing=0
+        bin <value_0_FF[0],legal_values[0],legal_values[0]> 
+                                                            2          1    Covered              
+        bin <value_0_FF[3],illegal_value,illegal_value> 
+                                                            1          1    Covered              
+        bin <value_0_FF[1],legal_values[0],legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[0],legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[0],legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[1],legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[1],legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[1],legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[1],legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[2],legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[2],legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[2],legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[2],legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[3],legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[3],legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[3],legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[3],legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[4],legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[4],legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[4],legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[4],legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],illegal_value,legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],illegal_value,legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],illegal_value,legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],illegal_value,legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[0],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[0],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[0],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[0],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[1],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[1],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[1],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[1],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[2],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[2],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[2],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[2],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[3],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[3],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[3],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[3],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[4],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[4],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[4],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[4],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],illegal_value,legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],illegal_value,legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],illegal_value,legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],illegal_value,legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[0],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[0],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[0],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[0],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[1],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[1],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[1],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[1],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[2],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[2],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[2],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[2],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[3],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[3],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[3],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[3],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[4],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[4],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[4],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[4],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],illegal_value,legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],illegal_value,legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],illegal_value,legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],illegal_value,legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[0],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[0],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[0],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[0],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[1],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[1],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[1],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[1],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[2],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[2],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[2],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[2],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[3],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[3],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[3],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[3],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[4],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[4],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[4],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[4],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],illegal_value,legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],illegal_value,legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],illegal_value,legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],illegal_value,legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[0],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[0],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[0],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[0],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[1],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[1],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[1],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[1],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[2],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[2],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[2],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[2],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[3],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[3],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[3],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[3],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[4],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[4],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[4],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[4],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],illegal_value,illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],illegal_value,illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],illegal_value,illegal_value> 
+                                                            0          1    ZERO                 
+    Cross wr_rd_data_port_register_cross                0.83%        100    Uncovered            
+        covered/total bins:                                 2        240                      
+        missing/total bins:                               238        240                      
+        % Hit:                                          0.83%        100                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.cross_num_print_missing=0
+        bin <value_0_FF[0],legal_values[0],legal_values[0],value_binary[0]> 
+                                                            2          1    Covered              
+        bin <value_0_FF[3],illegal_value,illegal_value,value_binary[1]> 
+                                                            1          1    Covered              
+        bin <value_0_FF[1],legal_values[0],legal_values[0],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[0],legal_values[0],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[0],legal_values[0],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[1],legal_values[0],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[1],legal_values[0],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[1],legal_values[0],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[1],legal_values[0],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[2],legal_values[0],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[2],legal_values[0],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[2],legal_values[0],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[2],legal_values[0],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[3],legal_values[0],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[3],legal_values[0],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[3],legal_values[0],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[3],legal_values[0],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[4],legal_values[0],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[4],legal_values[0],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[4],legal_values[0],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[4],legal_values[0],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],illegal_value,legal_values[0],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],illegal_value,legal_values[0],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],illegal_value,legal_values[0],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],illegal_value,legal_values[0],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[0],legal_values[1],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[0],legal_values[1],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[0],legal_values[1],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[0],legal_values[1],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[1],legal_values[1],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[1],legal_values[1],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[1],legal_values[1],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[1],legal_values[1],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[2],legal_values[1],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[2],legal_values[1],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[2],legal_values[1],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[2],legal_values[1],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[3],legal_values[1],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[3],legal_values[1],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[3],legal_values[1],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[3],legal_values[1],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[4],legal_values[1],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[4],legal_values[1],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[4],legal_values[1],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[4],legal_values[1],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],illegal_value,legal_values[1],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],illegal_value,legal_values[1],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],illegal_value,legal_values[1],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],illegal_value,legal_values[1],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[0],legal_values[2],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[0],legal_values[2],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[0],legal_values[2],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[0],legal_values[2],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[1],legal_values[2],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[1],legal_values[2],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[1],legal_values[2],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[1],legal_values[2],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[2],legal_values[2],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[2],legal_values[2],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[2],legal_values[2],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[2],legal_values[2],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[3],legal_values[2],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[3],legal_values[2],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[3],legal_values[2],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[3],legal_values[2],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[4],legal_values[2],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[4],legal_values[2],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[4],legal_values[2],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[4],legal_values[2],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],illegal_value,legal_values[2],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],illegal_value,legal_values[2],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],illegal_value,legal_values[2],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],illegal_value,legal_values[2],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[0],legal_values[3],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[0],legal_values[3],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[0],legal_values[3],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[0],legal_values[3],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[1],legal_values[3],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[1],legal_values[3],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[1],legal_values[3],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[1],legal_values[3],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[2],legal_values[3],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[2],legal_values[3],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[2],legal_values[3],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[2],legal_values[3],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[3],legal_values[3],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[3],legal_values[3],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[3],legal_values[3],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[3],legal_values[3],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[4],legal_values[3],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[4],legal_values[3],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[4],legal_values[3],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[4],legal_values[3],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],illegal_value,legal_values[3],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],illegal_value,legal_values[3],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],illegal_value,legal_values[3],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],illegal_value,legal_values[3],value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[0],illegal_value,value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[0],illegal_value,value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[0],illegal_value,value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[0],illegal_value,value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[1],illegal_value,value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[1],illegal_value,value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[1],illegal_value,value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[1],illegal_value,value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[2],illegal_value,value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[2],illegal_value,value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[2],illegal_value,value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[2],illegal_value,value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[3],illegal_value,value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[3],illegal_value,value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[3],illegal_value,value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[3],illegal_value,value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[4],illegal_value,value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[4],illegal_value,value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[4],illegal_value,value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[4],illegal_value,value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],illegal_value,illegal_value,value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],illegal_value,illegal_value,value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],illegal_value,illegal_value,value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],illegal_value,illegal_value,value_binary[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[0],legal_values[0],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[0],legal_values[0],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[0],legal_values[0],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[0],legal_values[0],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[1],legal_values[0],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[1],legal_values[0],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[1],legal_values[0],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[1],legal_values[0],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[2],legal_values[0],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[2],legal_values[0],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[2],legal_values[0],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[2],legal_values[0],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[3],legal_values[0],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[3],legal_values[0],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[3],legal_values[0],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[3],legal_values[0],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[4],legal_values[0],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[4],legal_values[0],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[4],legal_values[0],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[4],legal_values[0],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],illegal_value,legal_values[0],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],illegal_value,legal_values[0],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],illegal_value,legal_values[0],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],illegal_value,legal_values[0],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[0],legal_values[1],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[0],legal_values[1],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[0],legal_values[1],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[0],legal_values[1],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[1],legal_values[1],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[1],legal_values[1],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[1],legal_values[1],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[1],legal_values[1],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[2],legal_values[1],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[2],legal_values[1],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[2],legal_values[1],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[2],legal_values[1],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[3],legal_values[1],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[3],legal_values[1],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[3],legal_values[1],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[3],legal_values[1],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[4],legal_values[1],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[4],legal_values[1],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[4],legal_values[1],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[4],legal_values[1],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],illegal_value,legal_values[1],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],illegal_value,legal_values[1],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],illegal_value,legal_values[1],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],illegal_value,legal_values[1],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[0],legal_values[2],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[0],legal_values[2],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[0],legal_values[2],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[0],legal_values[2],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[1],legal_values[2],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[1],legal_values[2],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[1],legal_values[2],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[1],legal_values[2],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[2],legal_values[2],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[2],legal_values[2],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[2],legal_values[2],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[2],legal_values[2],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[3],legal_values[2],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[3],legal_values[2],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[3],legal_values[2],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[3],legal_values[2],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[4],legal_values[2],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[4],legal_values[2],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[4],legal_values[2],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[4],legal_values[2],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],illegal_value,legal_values[2],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],illegal_value,legal_values[2],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],illegal_value,legal_values[2],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],illegal_value,legal_values[2],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[0],legal_values[3],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[0],legal_values[3],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[0],legal_values[3],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[0],legal_values[3],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[1],legal_values[3],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[1],legal_values[3],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[1],legal_values[3],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[1],legal_values[3],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[2],legal_values[3],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[2],legal_values[3],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[2],legal_values[3],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[2],legal_values[3],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[3],legal_values[3],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[3],legal_values[3],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[3],legal_values[3],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[3],legal_values[3],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[4],legal_values[3],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[4],legal_values[3],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[4],legal_values[3],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[4],legal_values[3],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],illegal_value,legal_values[3],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],illegal_value,legal_values[3],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],illegal_value,legal_values[3],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],illegal_value,legal_values[3],value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[0],illegal_value,value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[0],illegal_value,value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[0],illegal_value,value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[0],illegal_value,value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[1],illegal_value,value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[1],illegal_value,value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[1],illegal_value,value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[1],illegal_value,value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[2],illegal_value,value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[2],illegal_value,value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[2],illegal_value,value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[2],illegal_value,value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[3],illegal_value,value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[3],illegal_value,value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[3],illegal_value,value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[3],illegal_value,value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[4],illegal_value,value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[4],illegal_value,value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[4],illegal_value,value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[4],illegal_value,value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],illegal_value,illegal_value,value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],illegal_value,illegal_value,value_binary[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],illegal_value,illegal_value,value_binary[1]> 
+                                                            0          1    ZERO                 
+    Cross wr_rd_cases_cross                           100.00%        100    Covered              
+        covered/total bins:                                 8          8                      
+        missing/total bins:                                 0          8                      
+        % Hit:                                        100.00%        100                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.cross_num_print_missing=0
+        bin <value_binary[0],value_binary[0],value_binary[0]> 
+                                                           17          1    Covered              
+        bin <value_binary[1],value_binary[0],value_binary[0]> 
+                                                           12          1    Covered              
+        bin <value_binary[0],value_binary[1],value_binary[0]> 
+                                                           11          1    Covered              
+        bin <value_binary[1],value_binary[1],value_binary[0]> 
+                                                           22          1    Covered              
+        bin <value_binary[0],value_binary[0],value_binary[1]> 
+                                                           11          1    Covered              
+        bin <value_binary[1],value_binary[0],value_binary[1]> 
+                                                            6          1    Covered              
+        bin <value_binary[0],value_binary[1],value_binary[1]> 
+                                                           10          1    Covered              
+        bin <value_binary[1],value_binary[1],value_binary[1]> 
+                                                           14          1    Covered              
+ TYPE /environment_pack/output_covergroup              26.38%        100    Uncovered            
+    covered/total bins:                                    10        165                      
+    missing/total bins:                                   155        165                      
+    % Hit:                                              6.06%        100                      
+    type_option.weight=1
+    type_option.goal=100
+    type_option.comment=
+    type_option.strobe=0
+    type_option.merge_instances=auto(0)
+    Coverpoint output_covergroup::wr_rd_s_out_cvp      50.00%        100    Uncovered            
+        covered/total bins:                                 1          2                      
+        missing/total bins:                                 1          2                      
+        % Hit:                                         50.00%        100                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Coverpoint output_covergroup::sel_en_out_cvp      100.00%        100    Covered              
+        covered/total bins:                                 4          4                      
+        missing/total bins:                                 0          4                      
+        % Hit:                                        100.00%        100                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Coverpoint output_covergroup::addr_out_7_5_cvp     16.66%        100    Uncovered            
+        covered/total bins:                                 1          6                      
+        missing/total bins:                                 5          6                      
+        % Hit:                                         16.66%        100                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Coverpoint output_covergroup::addr_out_4_0_cvp     20.00%        100    Uncovered            
+        covered/total bins:                                 1          5                      
+        missing/total bins:                                 4          5                      
+        % Hit:                                         20.00%        100                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Coverpoint output_covergroup::wr_data_out_cvp      25.00%        100    Uncovered            
+        covered/total bins:                                 1          4                      
+        missing/total bins:                                 3          4                      
+        % Hit:                                         25.00%        100                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Coverpoint output_covergroup::rd_data_in_cvp       25.00%        100    Uncovered            
+        covered/total bins:                                 1          4                      
+        missing/total bins:                                 3          4                      
+        % Hit:                                         25.00%        100                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Coverpoint output_covergroup::ack_in_cvp            0.00%        100    ZERO                 
+        covered/total bins:                                 0          4                      
+        missing/total bins:                                 4          4                      
+        % Hit:                                          0.00%        100                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Cross output_covergroup::data_port_register_cross 
+                                                        0.83%        100    Uncovered            
+        covered/total bins:                                 1        120                      
+        missing/total bins:                               119        120                      
+        % Hit:                                          0.83%        100                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Cross output_covergroup::read_data_port_cross       0.00%        100    ZERO                 
+        covered/total bins:                                 0         16                      
+        missing/total bins:                                16         16                      
+        % Hit:                                          0.00%        100                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+ Covergroup instance \/environment_pack::coverage::output_cvg  
+                                                       26.38%        100    Uncovered            
+    covered/total bins:                                    10        165                      
+    missing/total bins:                                   155        165                      
+    % Hit:                                              6.06%        100                      
+    option.name=\/environment_pack::coverage::output_cvg 
+    option.weight=1
+    option.goal=100
+    option.comment=
+    option.at_least=1
+    option.auto_bin_max=64
+    option.cross_num_print_missing=0
+    option.detect_overlap=0
+    option.per_instance=0
+    option.get_inst_coverage=0
+    Coverpoint wr_rd_s_out_cvp                         50.00%        100    Uncovered            
+        covered/total bins:                                 1          2                      
+        missing/total bins:                                 1          2                      
+        % Hit:                                         50.00%        100                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        bin value_binary[0]                               103          1    Covered              
+        bin value_binary[1]                                 0          1    ZERO                 
+    Coverpoint sel_en_out_cvp                         100.00%        100    Covered              
+        covered/total bins:                                 4          4                      
+        missing/total bins:                                 0          4                      
+        % Hit:                                        100.00%        100                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        bin unique_value[0]                                 2          1    Covered              
+        bin unique_value[1]                                 2          1    Covered              
+        bin unique_value[2]                                 1          1    Covered              
+        bin unique_value[3]                                 1          1    Covered              
+        default bin error_value                            97               Occurred             
+    Coverpoint addr_out_7_5_cvp                        16.66%        100    Uncovered            
+        covered/total bins:                                 1          6                      
+        missing/total bins:                                 5          6                      
+        % Hit:                                         16.66%        100                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        bin legal_values[0]                               103          1    Covered              
+        bin legal_values[1]                                 0          1    ZERO                 
+        bin legal_values[2]                                 0          1    ZERO                 
+        bin legal_values[3]                                 0          1    ZERO                 
+        bin legal_values[4]                                 0          1    ZERO                 
+        bin illegal_value                                   0          1    ZERO                 
+    Coverpoint addr_out_4_0_cvp                        20.00%        100    Uncovered            
+        covered/total bins:                                 1          5                      
+        missing/total bins:                                 4          5                      
+        % Hit:                                         20.00%        100                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        bin legal_values[0]                               103          1    Covered              
+        bin legal_values[1]                                 0          1    ZERO                 
+        bin legal_values[2]                                 0          1    ZERO                 
+        bin legal_values[3]                                 0          1    ZERO                 
+        bin illegal_value                                   0          1    ZERO                 
+    Coverpoint wr_data_out_cvp                         25.00%        100    Uncovered            
+        covered/total bins:                                 1          4                      
+        missing/total bins:                                 3          4                      
+        % Hit:                                         25.00%        100                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        bin value_0_FF[0]                                 103          1    Covered              
+        bin value_0_FF[1]                                   0          1    ZERO                 
+        bin value_0_FF[2]                                   0          1    ZERO                 
+        bin value_0_FF[3]                                   0          1    ZERO                 
+    Coverpoint rd_data_in_cvp                          25.00%        100    Uncovered            
+        covered/total bins:                                 1          4                      
+        missing/total bins:                                 3          4                      
+        % Hit:                                         25.00%        100                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        bin value_0_FF[0]                                 103          1    Covered              
+        bin value_0_FF[1]                                   0          1    ZERO                 
+        bin value_0_FF[2]                                   0          1    ZERO                 
+        bin value_0_FF[3]                                   0          1    ZERO                 
+    Coverpoint ack_in_cvp                               0.00%        100    ZERO                 
+        covered/total bins:                                 0          4                      
+        missing/total bins:                                 4          4                      
+        % Hit:                                          0.00%        100                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        bin unique_value[0]                                 0          1    ZERO                 
+        bin unique_value[1]                                 0          1    ZERO                 
+        bin unique_value[2]                                 0          1    ZERO                 
+        bin unique_value[3]                                 0          1    ZERO                 
+        default bin error_value                           103               Occurred             
+    Cross data_port_register_cross                      0.83%        100    Uncovered            
+        covered/total bins:                                 1        120                      
+        missing/total bins:                               119        120                      
+        % Hit:                                          0.83%        100                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.cross_num_print_missing=0
+        bin <value_0_FF[0],legal_values[0],legal_values[0]> 
+                                                          103          1    Covered              
+        bin <value_0_FF[1],legal_values[0],legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[0],legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[0],legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[1],legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[1],legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[1],legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[1],legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[2],legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[2],legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[2],legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[2],legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[3],legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[3],legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[3],legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[3],legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[4],legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[4],legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[4],legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[4],legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],illegal_value,legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],illegal_value,legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],illegal_value,legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],illegal_value,legal_values[0]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[0],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[0],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[0],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[0],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[1],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[1],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[1],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[1],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[2],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[2],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[2],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[2],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[3],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[3],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[3],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[3],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[4],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[4],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[4],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[4],legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],illegal_value,legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],illegal_value,legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],illegal_value,legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],illegal_value,legal_values[1]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[0],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[0],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[0],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[0],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[1],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[1],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[1],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[1],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[2],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[2],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[2],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[2],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[3],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[3],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[3],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[3],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[4],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[4],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[4],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[4],legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],illegal_value,legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],illegal_value,legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],illegal_value,legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],illegal_value,legal_values[2]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[0],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[0],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[0],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[0],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[1],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[1],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[1],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[1],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[2],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[2],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[2],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[2],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[3],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[3],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[3],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[3],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[4],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[4],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[4],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[4],legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],illegal_value,legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],illegal_value,legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],illegal_value,legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],illegal_value,legal_values[3]> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[0],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[0],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[0],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[0],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[1],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[1],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[1],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[1],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[2],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[2],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[2],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[2],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[3],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[3],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[3],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[3],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],legal_values[4],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],legal_values[4],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],legal_values[4],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],legal_values[4],illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[0],illegal_value,illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[1],illegal_value,illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[2],illegal_value,illegal_value> 
+                                                            0          1    ZERO                 
+        bin <value_0_FF[3],illegal_value,illegal_value> 
+                                                            0          1    ZERO                 
+    Cross read_data_port_cross                          0.00%        100    ZERO                 
+        covered/total bins:                                 0         16                      
+        missing/total bins:                                16         16                      
+        % Hit:                                          0.00%        100                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.cross_num_print_missing=0
+        bin <value_0_FF[0],unique_value[0]>                 0          1    ZERO                 
+        bin <value_0_FF[1],unique_value[0]>                 0          1    ZERO                 
+        bin <value_0_FF[2],unique_value[0]>                 0          1    ZERO                 
+        bin <value_0_FF[3],unique_value[0]>                 0          1    ZERO                 
+        bin <value_0_FF[0],unique_value[1]>                 0          1    ZERO                 
+        bin <value_0_FF[1],unique_value[1]>                 0          1    ZERO                 
+        bin <value_0_FF[2],unique_value[1]>                 0          1    ZERO                 
+        bin <value_0_FF[3],unique_value[1]>                 0          1    ZERO                 
+        bin <value_0_FF[0],unique_value[2]>                 0          1    ZERO                 
+        bin <value_0_FF[1],unique_value[2]>                 0          1    ZERO                 
+        bin <value_0_FF[2],unique_value[2]>                 0          1    ZERO                 
+        bin <value_0_FF[3],unique_value[2]>                 0          1    ZERO                 
+        bin <value_0_FF[0],unique_value[3]>                 0          1    ZERO                 
+        bin <value_0_FF[1],unique_value[3]>                 0          1    ZERO                 
+        bin <value_0_FF[2],unique_value[3]>                 0          1    ZERO                 
+        bin <value_0_FF[3],unique_value[3]>                 0          1    ZERO                 
+
+TOTAL COVERGROUP COVERAGE: 48.53%  COVERGROUP TYPES: 2

@@ -9,8 +9,6 @@ src/interface/output_interface.sv
 src/pack/input_agent_pack.sv
 src/pack/output_agent_pack.sv
 
-src/pack/coverage_pack.sv
-
 src/pack/environment_pack.sv
 
 src/pack/test_pack.sv
