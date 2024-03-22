@@ -15,7 +15,8 @@ task input_sequence::body();
     item = input_item::type_id::create("input_item");
     repeat(100) begin
         start_item(item);
-        item.randomize();
+        assert(item.randomize());
+        `uvm_info(get_name(), $sformatf("Create: %s", item.convert2string), UVM_FULL);
         finish_item(item);
     end
 endtask : body

@@ -6,5 +6,4 @@ package sequence_pack;
 
   `include "src/test/sequence/input_sequence.svh"
   `include "src/test/sequence/output_sequence.svh"
-  `include "src/test/sequence/virtual_sequence.svh"
 endpackage : sequence_pack

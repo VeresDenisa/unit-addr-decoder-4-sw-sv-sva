@@ -14,6 +14,7 @@ package environment_pack;
   `include "src/test/environment/coverage/coverage.svh"
 
   `include "src/test/environment/virtual_sequencer.svh"
+  `include "src/test/sequence/virtual_sequence.svh"
   
   `include "src/test/environment/environment_config.svh"
   `include "src/test/environment/environment.svh"

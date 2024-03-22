@@ -3,7 +3,7 @@ class output_agent extends uvm_agent;
     
     virtual output_interface output_i;
 
-    uvm_sequencer #(output_item) seqr; 
+    output_sequencer seqr; 
     output_driver  drv;
     output_monitor mon;
     
@@ -30,7 +30,7 @@ function void output_agent::build_phase(uvm_phase phase);
         `uvm_fatal(this.get_name(), "Failed to get memory interface");
     
     if(output_config_h.get_is_active() == UVM_ACTIVE) begin
-        seqr = uvm_sequencer#(output_item)::type_id::create("output_agent_seqr", this);
+        seqr = output_sequencer::type_id::create("output_agent_seqr", this);
         drv  = output_driver::type_id::create("output_agent_driver",  this); 
         uvm_config_db#(virtual output_interface)::set(this, "output_agent_driver*", "output_interface", output_i);
     end
@@ -47,6 +47,7 @@ function void output_agent::connect_phase(uvm_phase phase);
 
     if(output_config_h.get_is_active() == UVM_ACTIVE) begin
         drv.seq_item_port.connect(seqr.seq_item_export);
+        mon.an_port.connect(seqr.export_port);
     end
 
     `uvm_info(get_name(), $sformatf("<--- EXIT PHASE: --> CONNECT <--"), UVM_DEBUG);

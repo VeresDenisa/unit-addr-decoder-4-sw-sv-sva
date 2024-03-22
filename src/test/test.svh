@@ -5,6 +5,7 @@ class test extends uvm_test;
     environment env; 
 
     input_sequence input_seq;
+    virtual_sequence v_seq;
     
     function new (string name = "test", uvm_component parent = null);
         super.new(name, parent);
@@ -27,6 +28,7 @@ function void test::build_phase(uvm_phase phase);
     env = environment::type_id::create("env", this); 
 
     input_seq = input_sequence::type_id::create("input_seq");
+    v_seq = virtual_sequence::type_id::create("v_seq");
         
     `uvm_info(get_name(), $sformatf("<--- EXIT PHASE: --> BUILD <--"), UVM_DEBUG);
 endfunction : build_phase
@@ -44,6 +46,7 @@ task test::main_phase(uvm_phase phase);
 
     phase.raise_objection(this);
     fork
+        v_seq.start(env.v_seqr);
         input_seq.start(env.input_agent_h.seqr);
     join
     phase.drop_objection(this);  
