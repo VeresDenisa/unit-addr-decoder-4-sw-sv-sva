@@ -38,7 +38,7 @@ task input_monitor::run_phase(uvm_phase phase);
         @(input_i.monitor);
         input_i.receive(item_current);
         //if(!item_current.compare(item_previous)) begin
-        //`uvm_info(get_name(), $sformatf("Monitored configuration: %s", item_current.convert2string), UVM_MEDIUM);
+        `uvm_info(get_name(), $sformatf("Monitored configuration: %s", item_current.convert2string), UVM_MEDIUM);
         //item_previous.copy(item_current);
         an_port.write(item_current);
         //end

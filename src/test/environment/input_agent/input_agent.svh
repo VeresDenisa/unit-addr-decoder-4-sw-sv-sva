@@ -30,13 +30,13 @@ function void input_agent::build_phase(uvm_phase phase);
         `uvm_fatal(this.get_name(), "Failed to get memory interface");
     
     if(input_config_h.get_is_active() == UVM_ACTIVE) begin
-        seqr = uvm_sequencer#(input_item)::type_id::create($sformatf("%s_seqr", name), this);
-        drv  = input_driver::type_id::create($sformatf("%s_driver", name),  this); 
+        seqr = uvm_sequencer#(input_item)::type_id::create("input_agent_seqr", this);
+        drv  = input_driver::type_id::create("input_agent_driver",  this); 
         uvm_config_db#(virtual input_interface)::set(this, "input_agent_driver*", "input_interface", input_i);
     end
     
     // DEFAULT PASSIVE
-    mon = input_monitor::type_id::create($sformatf("%s_monitor", name),  this);
+    mon = input_monitor::type_id::create("input_agent_monitor",  this);
     uvm_config_db#(virtual input_interface)::set(this, "input_agent_monitor*", "input_interface", input_i);
 
     `uvm_info(get_name(), $sformatf("<--- EXIT PHASE: --> BUILD <--"), UVM_DEBUG);

@@ -11,19 +11,13 @@ module testbench;
         clk = 1'b0;
         forever #5 clk = ~clk;
     end
-
-    initial begin
-        rst_n = 1'b1;
-        #5 rst_n = 1'b0;
-        #5 rst_n = 1'b1;
-    end
     
     input_interface  input_i(clk);
     output_interface output_i(clk);
     
     addr_decoder_top DUT(
         .clk(clk),
-        .rst_n(rst_n),
+        .rst_n(input_i.rst_n),
 
         .enable_in(input_i.enable_in),
         .wr_rd_op(input_i.wr_rd_op),

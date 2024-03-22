@@ -1,17 +1,22 @@
 import item_pack::*;
 
 interface input_interface(input bit clock);
+    bit       rst_n;
+
     bit       enable_in;
     bit       wr_rd_op;
     bit       valid_in;
     bit [7:0] addr_in;
     bit [7:0] op_id_in;
     bit [7:0] wr_data_in;
+
     bit       ready_out;
     bit [7:0] rd_data_out;
     bit [7:0] done_op_id;
 
     clocking driver@(posedge clock);
+        output rst_n;
+        
         output enable_in;
         output wr_rd_op;
         output valid_in;

@@ -1,6 +1,9 @@
 class test extends uvm_test;
     `uvm_component_utils(test);
 
+    environment_config env_config;
+    environment env; 
+
     input_sequence input_seq;
     
     function new (string name = "test", uvm_component parent = null);
@@ -37,11 +40,11 @@ endfunction : start_of_simulation_phase
 task test::main_phase(uvm_phase phase);
     `uvm_info(get_name(), $sformatf("---> ENTER PHASE: --> MAIN <--"), UVM_DEBUG);
 
-    phase.phase_done.set_drain_time(this, 10);
+    phase.phase_done.set_drain_time(this, 20);
 
     phase.raise_objection(this);
     fork
-        input_seq.start(env.input_agent.seqr);
+        input_seq.start(env.input_agent_h.seqr);
     join
     phase.drop_objection(this);  
 

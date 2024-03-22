@@ -1,4 +1,4 @@
-class base_agent_config;  
+class input_config;  
     protected uvm_active_passive_enum is_active;
     
     function new ( uvm_active_passive_enum is_active );
@@ -8,4 +8,4 @@ class base_agent_config;
     function uvm_active_passive_enum get_is_active();
         return is_active;
     endfunction : get_is_active  
-endclass : base_agent_config
+endclass : input_config

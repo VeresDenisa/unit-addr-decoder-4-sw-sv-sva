@@ -28,7 +28,7 @@ function void environment::build_phase(uvm_phase phase);
       
   uvm_config_db #(input_config)::set(this, "input_agent*", "config", input_config_h);
   
-  input_agent = input_agent::type_id::create("input_agent", this);
+  input_agent_h = input_agent::type_id::create("input_agent", this);
   
   `uvm_info(get_name(), $sformatf("<--- EXIT PHASE: --> BUILD <--"), UVM_DEBUG);
 endfunction : build_phase

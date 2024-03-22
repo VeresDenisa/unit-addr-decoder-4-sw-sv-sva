@@ -13,7 +13,9 @@ endclass : input_sequence
 
 task input_sequence::body();
     item = input_item::type_id::create("input_item");
-    start_item(item);
-    assert(item.randomize());
-    finish_item(item);
+    repeat(100) begin
+        start_item(item);
+        item.randomize();
+        finish_item(item);
+    end
 endtask : body

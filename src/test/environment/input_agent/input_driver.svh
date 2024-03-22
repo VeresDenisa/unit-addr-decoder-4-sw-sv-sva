@@ -10,7 +10,7 @@ class input_driver extends uvm_driver #(input_item);
     endfunction : new 
 
     extern function void build_phase (uvm_phase phase);
-    extern task input_phase(uvm_phase phase);
+    extern task reset_phase(uvm_phase phase);
     extern task main_phase(uvm_phase phase);
 endclass : input_driver
 
@@ -27,7 +27,7 @@ function void input_driver::build_phase (uvm_phase phase);
 endfunction : build_phase
 
 task input_driver::reset_phase(uvm_phase phase);
-    super.input_phase(phase);
+    super.reset_phase(phase);
     `uvm_info(get_name(), $sformatf("---> ENTER PHASE: --> RESET <--"), UVM_DEBUG);
     
     phase.raise_objection(this);
@@ -39,6 +39,12 @@ task input_driver::reset_phase(uvm_phase phase);
     input_i.op_id_in   <= 8'h00;
     input_i.wr_data_in <= 8'h00;
 
+    input_i.rst_n <= 1'b1;
+    @(input_i.driver);
+    input_i.rst_n <= 1'b0;
+    @(input_i.driver);
+    input_i.rst_n <= 1'b1;
+
     phase.drop_objection(this);
 
     `uvm_info(get_name(), $sformatf("<--- EXIT PHASE: --> RESET <--"), UVM_DEBUG);
@@ -48,14 +54,14 @@ task input_driver::main_phase(uvm_phase phase);
     super.main_phase(phase);  
     `uvm_info(get_name(), $sformatf("---> ENTER PHASE: --> MAIN <--"), UVM_DEBUG);
 
-    forever begin : command_loop
+    forever begin : send_loop
         seq_item_port.get_next_item(item);
         
         input_i.send(item);
-        //`uvm_info(get_name(), $sformatf("Drive: %s", item.convert2string), UVM_LOW);
+        `uvm_info(get_name(), $sformatf("Drive: %s", item.convert2string), UVM_LOW);
         
         seq_item_port.item_done();
-    end : command_loop
+    end : send_loop
     
     `uvm_info(get_name(), $sformatf("<--- EXIT PHASE: --> MAIN <--"), UVM_DEBUG);
 endtask : main_phase
