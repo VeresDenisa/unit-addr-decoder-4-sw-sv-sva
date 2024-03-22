@@ -1,4 +1,4 @@
-package input_agent_pack;
+package output_agent_pack;
   import uvm_pkg::*;
   `include "uvm_macros.svh"
 
@@ -9,4 +9,4 @@ package input_agent_pack;
   `include "src/test/environment/output_agent/output_monitor.svh"
   
   `include "src/test/environment/output_agent/output_agent.svh"
-endpackage : input_agent_pack
+endpackage : output_agent_pack

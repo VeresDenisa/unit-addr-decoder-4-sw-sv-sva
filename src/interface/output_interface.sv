@@ -2,8 +2,8 @@ import item_pack::*;
 
 interface output_interface(input bit clock);
     bit [7:0] rd_data_in;
-    bit [5:0] ack_in;
-    bit [5:0] sel_en_out;
+    bit [4:0] ack_in;
+    bit [4:0] sel_en_out;
     bit       wr_rd_s_out;
     bit [7:0] addr_out;
     bit [7:0] wr_data_out;

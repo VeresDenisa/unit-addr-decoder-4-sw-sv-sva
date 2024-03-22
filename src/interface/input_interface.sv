@@ -5,7 +5,7 @@ interface input_interface(input bit clock);
     bit       wr_rd_op;
     bit       valid_in;
     bit [7:0] addr_in;
-    bit [7:0] op_in_id;
+    bit [7:0] op_id_in;
     bit [7:0] wr_data_in;
     bit       ready_out;
     bit [7:0] rd_data_out;
@@ -16,7 +16,7 @@ interface input_interface(input bit clock);
         output wr_rd_op;
         output valid_in;
         output addr_in;
-        output op_in_id;
+        output op_id_in;
         output wr_data_in;
     endclocking
 
@@ -25,7 +25,7 @@ interface input_interface(input bit clock);
         input wr_rd_op;
         input valid_in;
         input addr_in;
-        input op_in_id;
+        input op_id_in;
         input wr_data_in;
         input ready_out;
         input rd_data_out;
@@ -38,7 +38,7 @@ interface input_interface(input bit clock);
         driver.wr_rd_op   <= t.wr_rd_op;
         driver.valid_in   <= t.valid_in;
         driver.addr_in    <= t.addr_in;
-        driver.op_in_id   <= t.op_in_id;
+        driver.op_id_in   <= t.op_id_in;
         driver.wr_data_in <= t.wr_data_in;
     endtask : send
 
@@ -47,7 +47,7 @@ interface input_interface(input bit clock);
         t.wr_rd_op    = monitor.wr_rd_op;
         t.valid_in    = monitor.valid_in;
         t.addr_in     = monitor.addr_in;
-        t.op_in_id    = monitor.op_in_id;
+        t.op_id_in    = monitor.op_id_in;
         t.wr_data_in  = monitor.wr_data_in;
         t.ready_out   = monitor.ready_out;
         t.rd_data_out = monitor.rd_data_out;

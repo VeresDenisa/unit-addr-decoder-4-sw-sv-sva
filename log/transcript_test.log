@@ -1,0 +1,106 @@
+# vsim -c -classdebug -voptargs="+acc" "+UVM_TESTNAME=test" "+UVM_VERBOSITY=FULL" -wlf wave/wave_test.wlf work.testbench -do "log -r /*; coverage save -onexit ucdb/ucdb_test.ucdb; run -all; quit -f; exit" 
+# Start time: 11:16:01 on Mar 22,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim-64
+# //  Version 10.7c linux_x86_64 Aug 17 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.coverage_pack(fast)
+# Loading work.output_agent_pack(fast)
+# Loading work.input_agent_pack(fast)
+# Loading work.item_pack(fast)
+# Loading work.sequence_pack(fast)
+# Loading work.environment_pack(fast)
+# Loading work.test_pack(fast)
+# Loading work.testbench_sv_unit(fast)
+# Loading work.testbench(fast)
+# Loading work.input_interface_sv_unit(fast)
+# Loading work.input_interface(fast)
+# Loading work.output_interface_sv_unit(fast)
+# Loading work.output_interface(fast)
+# Loading work.addr_decoder_top(fast)
+# Loading work.bus_module(fast)
+# Loading work.fifo(fast)
+# Loading work.tx_scheduler_top(fast)
+# Loading work.fifo_rd_cntrl(fast)
+# Loading work.frame_sif(fast)
+# Loading work.rx_module(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.input_interface(fast)
+# Loading work.output_interface(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (5) for port 'full'. The port definition is at: ../unit-addr-decoder-4-sw-v-design/design/source/fifo_module.v(9).
+#    Time: 0 ns  Iteration: 0  Instance: /testbench/DUT/genblk1[0]/DUT_AD_FIFO File: ../unit-addr-decoder-4-sw-v-design/design/source/addr_decoder_top.v Line: 75
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (5) for port 'full'. The port definition is at: ../unit-addr-decoder-4-sw-v-design/design/source/fifo_module.v(9).
+#    Time: 0 ns  Iteration: 0  Instance: /testbench/DUT/genblk1[1]/DUT_AD_FIFO File: ../unit-addr-decoder-4-sw-v-design/design/source/addr_decoder_top.v Line: 75
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (5) for port 'full'. The port definition is at: ../unit-addr-decoder-4-sw-v-design/design/source/fifo_module.v(9).
+#    Time: 0 ns  Iteration: 0  Instance: /testbench/DUT/genblk1[2]/DUT_AD_FIFO File: ../unit-addr-decoder-4-sw-v-design/design/source/addr_decoder_top.v Line: 75
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (5) for port 'full'. The port definition is at: ../unit-addr-decoder-4-sw-v-design/design/source/fifo_module.v(9).
+#    Time: 0 ns  Iteration: 0  Instance: /testbench/DUT/genblk1[3]/DUT_AD_FIFO File: ../unit-addr-decoder-4-sw-v-design/design/source/addr_decoder_top.v Line: 75
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (5) for port 'full'. The port definition is at: ../unit-addr-decoder-4-sw-v-design/design/source/fifo_module.v(9).
+#    Time: 0 ns  Iteration: 0  Instance: /testbench/DUT/genblk1[4]/DUT_AD_FIFO File: ../unit-addr-decoder-4-sw-v-design/design/source/addr_decoder_top.v Line: 75
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'op_id_out'. The port definition is at: ../unit-addr-decoder-4-sw-v-design/design/source/rx_module.v(14).
+#    Time: 0 ns  Iteration: 0  Instance: /testbench/DUT/DUT_RX_FSM File: ../unit-addr-decoder-4-sw-v-design/design/source/addr_decoder_top.v Line: 112
+# Loading /opt/questa/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
+# log -r /*
+#  coverage save -onexit ucdb/ucdb_test.ucdb
+#  run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test test...
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] End Of Elaboration
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# -------------------------------
+# Name          Type  Size  Value
+# -------------------------------
+# uvm_test_top  test  -     @476 
+# -------------------------------
+# 
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    5
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     3
+# [RNTST]     1
+# [UVMTOP]     1
+# ** Note: $finish    : /opt/questa/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 10 ns  Iteration: 96  Instance: /testbench
+# Saving coverage database on exit...
+# End time: 11:16:05 on Mar 22,2024, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 6
